@@ -8,7 +8,7 @@
   glib,
   shared-mime-info,
   gsettings-desktop-schemas,
-  wrapGAppsHook,
+  wrapGAppsHook4,
   gtk4-layer-shell,
   gnome,
   libxkbcommon,
@@ -19,6 +19,7 @@
   luajit,
   luajitPackages,
   pkg-config,
+  dbus,
   installShellFiles,
   adwaita-icon-theme,
   hicolor-icon-theme,
@@ -89,8 +90,9 @@ in
       };
 
     nativeBuildInputs = [
+      dbus
       pkg-config
-      wrapGAppsHook
+      wrapGAppsHook4
       gobject-introspection
       installShellFiles
     ];
